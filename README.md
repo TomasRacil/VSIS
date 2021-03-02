@@ -10,7 +10,7 @@ Pro naklonování tohoto repozitáře do vašeho počítače využijte následuj
 git clone https://github.com/TomasRacil/VSIS.git
 ```
 
-_Následující příkazy provádějte přímo ve složce lokálního repozitáře._
+_Následující příkazy provádějte přímo ve složce vašeho lokálního repozitáře._
 
 Pro aktualizaci vašeho lokálního repozitáře použijte následující příkaz:
 
