@@ -1,12 +1,8 @@
-# Docker
+# Docker command line
 
-Další část hodiny se bude zabývat problematikou kontejnerizace pomocí nástroje docker.
+Command line utility dockeru poskytuje velké množství funkcí pro kontejnerizaci aplikací. Cílem této sekce je představit základní funkce a vysvětlit na nich principy dockeru.
 
-## Virtual machine vs Container
-
-![VM](https://www.backblaze.com/blog/wp-content/uploads/2018/06/whats-the-diff-container-vs-vm.jpg)
-
-## Úkoly command line
+## Úkoly
 
 1. Spuštění prvního kontejneru hello-world
 2. Stažení kontejneru alpine a spuštění v interaktivním módu
@@ -17,9 +13,6 @@ Další část hodiny se bude zabývat problematikou kontejnerizace pomocí nás
 7. Propojení dockeru a PgAdmin
 8. Odstranění postgres_test pgadmin_test alpine a sítě postgres_network
 
-## Úkoly docker compose
-
-1. Test
 
 ## Potřebné příkazy
 
@@ -40,7 +33,15 @@ docker run --help
 ```
 
 ```shell
-docker run -it alpine:latest
+docker run --name alpine_test -it alpine:latest
+```
+
+```shell
+docker exec -ti alpine_test /bin/bash
+```
+
+```shell
+docker attach alpine_test
 ```
 
 ```shell
@@ -84,7 +85,7 @@ docker start postgres_test pgadmin_test
 ```
 
 ```shell
-docker rm postgres_test pgadmin_test
+docker rm postgres_test pgadmin_test alpine_test
 ```
 
 ```shell
