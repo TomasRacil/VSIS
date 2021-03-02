@@ -6,7 +6,7 @@ První část hodiny se bude věnovat práci s GITem a Githubem.
 1. Doplnění vašeho celého jména do souboru s vaším jménem a následné zavedení změny do sdíleného repozitáře.
 2. Přidání vašeho jména a tématu diplomové práce do souboru spolecne.txt a zavedení změny do sdíleného repozitáře.
 
-Potřebné příkazy: 
+## Potřebné příkazy
 
 ```shell
 git pull
