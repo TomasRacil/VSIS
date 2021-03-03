@@ -13,7 +13,6 @@ Command line utility dockeru poskytuje velké množství funkcí pro kontejneriz
 7. Propojení dockeru a PgAdmin
 8. Odstranění postgres_test pgadmin_test alpine a sítě postgres_network
 
-
 ## Potřebné příkazy
 
 ```shell

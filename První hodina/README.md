@@ -1,6 +1,7 @@
 # První hodina
 
 ## 1. Git
+
 Je zapotřebí [stáhnout](https://git-scm.com/downloads) a nainstalovat nejnovější verzi programu git pro váš OS. Také je potřeba se [zaregistrovat](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home) na GitHubu. Nakonec je potřeba správně nakonfigurovat vaši instalci git zadáním následujicích příkazů:
 
 ```shell
@@ -21,4 +22,4 @@ Je zapotřebí [stáhnout](https://www.docker.com/get-started) a nainstalovat ne
 
 ## 3. VSCode
 
-Je zapotřebí [stáhnout](https://code.visualstudio.com/ a nainstalovat nejnovější verzi programu VSCode pro váš OS.
+Je zapotřebí [stáhnout](https://code.visualstudio.com/) a nainstalovat nejnovější verzi programu VSCode pro váš OS.

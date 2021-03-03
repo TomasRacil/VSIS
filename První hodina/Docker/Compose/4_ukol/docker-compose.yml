@@ -3,7 +3,7 @@ services:
   db:
     image: postgres
     networks: 
-      - db_bc
+      - backend
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: admin
@@ -14,8 +14,8 @@ services:
   backend:
     image: alpine
     networks: 
-      - db_bc
-      - bc_fr
+      - backend
+      - frontend
     stdin_open: true
     tty: true
  
@@ -23,16 +23,16 @@ services:
   frontend:
     image: alpine
     networks:
-      - bc_fr
+      - frontend
     stdin_open: true
     tty: true
     ports: 
       - 80:80
 
 networks:
-  db_bc:
+  backend:
     driver: bridge
-  bc_fr:
+  frontend:
     driver: bridge
 
 volumes:

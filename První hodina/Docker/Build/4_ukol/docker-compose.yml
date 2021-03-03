@@ -1,0 +1,50 @@
+version: '3.7'
+services:
+  db:
+    image: postgres
+    networks: 
+      - backend_net
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+    volumes:
+      - db-data:/var/lib/pgsql/data
+  
+  backend:
+    build: ./Backend
+    networks: 
+      - backend_net
+      - frontend_net
+    environment: 
+      FLASK_APP: app.py
+      DATABASE_URL: db
+      DATABASE_PORT: 5432
+      DATABASE_NAME: postgres
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: secret
+      BACKEND_URL: 0.0.0.0
+      FLASK_RUN_PORT: 5000
+      FLASK_ENV: development
+    ports: 
+      - 5000:5000
+ 
+  
+  frontend:
+    build: ./Frontend
+    networks:
+      - frontend_net
+    environment: 
+      ENV BACKEND_URL: backend
+      ENV BACKEND_PORT: 5000
+    ports: 
+      - 80:80
+
+networks:
+  backend_net:
+    driver: bridge
+  frontend_net:
+    driver: bridge
+
+volumes:
+  db-data:

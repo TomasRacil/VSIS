@@ -1,6 +1,7 @@
 # GIT
 
-První část hodiny se bude věnovat práci s GITem a Githubem. 
+První část hodiny se bude věnovat práci s GITem a Githubem.
+
 ## Úkoly
 
 1. Doplnění vašeho celého jména do souboru s vaším jménem a následné zavedení změny do sdíleného repozitáře.
