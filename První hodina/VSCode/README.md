@@ -11,5 +11,8 @@ Editor je velice dobře modifikovatelný a to skrze uživatelské nastavení, kt
 Pro potřeby společné výuky budeme potřebovat nainstalovat rošíření _ms-vscode-remote.remote-containers_ . Múžeme ho vyhledet zadáním textu do search baru na panelu rozšíření a následně kliknutím na instalovat.
 
 ## Úkoly
-1. Spusťte remote container obsažený ve složce 1_ukol v tomto adresáři.
-2. ad
+
+1. Spusťte a prohlídnětete si remote container obsažený ve složce 1_ukol v tomto adresáři. Zkuste spustit lokální server a alespoň jeden python příkaz v konzoli.
+2. V druhém remote containeru (obsažený ve složce 2_ukol) můžeme nají html a js soubory spuťte kontejner a proveďte nějaké úpravy v souborech.
+3. V třetím remote containeru (obsažený ve složce 3_ukol) je react aplikace zkuste aplikaci upravit a zobrazit v prohlížeči.
+4. V rámci ukázky git jsme používali consoli nyní provedeme stejné úkoly ale využijem git GUI, které je součástí VSCode.
