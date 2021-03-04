@@ -7,6 +7,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
 RUN pip install flask
 
 ENV FLASK_APP=app.py
+ENV FLASK_ENV=development
 
 # [Option] Install Node.js
 #ARG INSTALL_NODE="true"
