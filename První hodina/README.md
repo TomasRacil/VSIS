@@ -28,4 +28,4 @@ Pro urychlení pozdější práce ...
 
 ```shell
 docker pull alpine & docker pull dpage/pgadmin & docker pull node & docker pull postgres & docker pull python & docker pull mcr.microsoft.com/vscode/devcontainers/base & docker pull mcr.microsoft.com/vscode/devcontainers/python
-```
+``` 
