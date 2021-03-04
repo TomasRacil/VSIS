@@ -1,2 +1,3 @@
 Tomáš Ráčil Vyývoj IS ...
 Kohlíček Malware v prostředí Windows a v polních sítích
+Zajac Virtualizační technologie (VMware, Hyper-V)
