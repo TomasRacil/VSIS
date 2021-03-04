@@ -23,3 +23,9 @@ Je zapotřebí [stáhnout](https://www.docker.com/get-started) a nainstalovat ne
 ## 3. VSCode
 
 Je zapotřebí [stáhnout](https://code.visualstudio.com/) a nainstalovat nejnovější verzi programu VSCode pro váš OS.
+
+Pro urychlení pozdější práce ...
+
+```shell
+docker pull alpine & docker pull dpage/pgadmin & docker pull node & docker pull postgres & docker pull python & docker pull mcr.microsoft.com/vscode/devcontainers/base & docker pull mcr.microsoft.com/vscode/devcontainers/python
+```
