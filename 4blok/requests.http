@@ -1,0 +1,15 @@
+PUT http://localhost:5000/todo/1 HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+data=Test
+
+###
+POST http://localhost:5000/todo/3 HTTP/1.1
+content-type: application/json
+{
+    "data": "Test"
+}
+
+###
+GET http://localhost:5000/todo1 HTTP/1.1
+

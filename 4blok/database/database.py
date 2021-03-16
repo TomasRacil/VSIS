@@ -1,13 +1,14 @@
-from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from flask_sqlalchemy import SQLAlchemy
 
-SQLALCHEMY_DATABASE_URL = 'postgresql://postgres:postgres@db/postgres'
+from ..app import app
 
-engine = create_engine(
-    SQLALCHEMY_DATABASE_URL,connect_args={"check_same_threads": False}
-)
+db = SQLAlchemy(app)
 
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-Base = declarative_base()
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(80), unique=True, nullable=False)
+    email = db.Column(db.String(120), unique=True, nullable=False)
+
+    def __repr__(self):
+        return '<User %r>' % self.username
