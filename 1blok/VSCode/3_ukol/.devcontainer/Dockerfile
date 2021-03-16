@@ -8,8 +8,8 @@ ENV BACKEND_URL=backend
 ENV BACKEND_PORT=5000
 ENV CHOKIDAR_USEPOLLING=true
 
-RUN cd app
-RUN yarn install 
+#RUN cd app
+#RUN yarn install 
 #RUN npm install react-scripts@3.4.1 -g 
 
 
