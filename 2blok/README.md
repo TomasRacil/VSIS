@@ -93,7 +93,7 @@ Pro ukázku SQL využijeme docker compose, který jsme vytvořili v předchozím
     6. Změníme záznam v nějaké tabulce.
     7. Vytvořím view, které bude obsahovat celou emailovou adresu.
     8. Smažeme záznam v nějaké tabulce.
-    9. Zobrazíme údaje o uživatelech a hodnotách uložoných v tabulce results.
+    9. Zobrazíme údaje o uživatelech a hodnotách uložených v tabulce results.
     10. Vytvoříme funkci která zkontorluje platnost emailové adresy.
 
 ## Potřebné příkazy
