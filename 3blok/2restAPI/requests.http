@@ -1,0 +1,32 @@
+PUT http://localhost:5000/todo/1 HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+data=Test
+
+###
+POST http://localhost:5000/todo/2 HTTP/1.1
+content-type: application/x-www-form-urlencoded
+
+data=Test2
+
+###
+GET http://localhost:5000/todo/2 HTTP/1.1
+
+
+###
+POST http://localhost:5000/json/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "shopping list",
+    "date": "19.3.2021",
+    "content": [
+        {"name":"milk",
+        "qty":2},
+        {"name":"bread",
+        "qty":1}
+        ]
+}
+
+###
+GET http://localhost:5000/json/0 HTTP/1.1

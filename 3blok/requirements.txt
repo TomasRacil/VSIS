@@ -1,4 +1,5 @@
 flask
 flask-restful
+Flask-SQLAlchemy
 psycopg2
 SQLAlchemy
