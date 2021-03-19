@@ -9,3 +9,5 @@ Pro lokální vývoj stáhnout a nainstalovat [Python](https://www.python.org/do
 ```powershell
 pip install -r requirements.txt
 ```
+
+Pozn.: [podrobný postup instalce PostgreSQL](https://www.postgresqltutorial.com/install-postgresql/)
