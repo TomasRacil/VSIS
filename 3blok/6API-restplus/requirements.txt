@@ -1,0 +1,7 @@
+flask
+flask-restplus
+flask-migrate
+flask-scripts
+flask_testing
+pyjwt
+flask-bcrypt

@@ -33,6 +33,10 @@
 		"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
 		"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
 		"python.testing.pytestPath": "/usr/local/py-utils/bin/pytest",
+		//"python.linting.pylintArgs": [
+		//	"--load-plugins",
+		//	"pylint_flask_sqlalchemy",
+		//	"pylint_flask",                 ],
 		"workbench.colorTheme": "United Ubuntu"
 	},
 
@@ -44,7 +48,8 @@
 		"cstrap.flask-snippets",
 		"solarliner.linux-themes",
 		"coenraads.bracket-pair-colorizer-2",
-		"humao.rest-client"
+		"humao.rest-client",
+		"visualstudioexptteam.vscodeintellicode"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

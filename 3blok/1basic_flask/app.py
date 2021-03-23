@@ -28,5 +28,10 @@ def post(post_id):
     print(post)
     return render_template('post.html', post=post)
 
+@app.route('/hello')
+def hello():
+    return r'<h1>Hello</h1>'
+
+
 if __name__ == '__main__':
     app.run()

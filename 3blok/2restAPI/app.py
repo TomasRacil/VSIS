@@ -9,6 +9,8 @@ todos = {}
 
 todos_json = []
 
+osoby = []
+
 class HelloWorld(Resource):
     def get(self):
         return {'hello': 'world'}
@@ -34,9 +36,19 @@ class TodoJson(Resource):
         id= len(todos_json)-1
         return {id:todos_json[id]}
 
+
+class Osoba(Resource):
+    def post(self):
+        sent_data=request.json
+        osoby.append(sent_data)
+        print(sent_data)
+    def get(self):
+        return osoby
+
 api.add_resource(HelloWorld, '/')
 api.add_resource(TodoSimple, '/todo/<int:id>')
 api.add_resource(TodoJson, '/json/<int:id>')
+api.add_resource(Osoba,'/osoba')
 
 if __name__ == '__main__':
     app.run(debug=True)
