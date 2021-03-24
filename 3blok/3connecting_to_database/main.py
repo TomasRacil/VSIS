@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-SQLALCHEMY_DATABASE_URI= 'postgresql://postgres:postgres@db/postgres'
+SQLALCHEMY_DATABASE_URI= 'postgresql://postgres:postgres@db:5432/test'
 
 engine = create_engine(SQLALCHEMY_DATABASE_URI, echo=True)
 Base = declarative_base()
@@ -27,6 +27,6 @@ class User(Base):
 #session.add(ed_user)
 #our_user = session.query(User).filter_by(username='ed').first()
 #ed_user is our_user
-#session.add_all([User(username='wendy', local_part='wendy', domain='gmail.com', password='windy'),User(username='mary', local_part='mary', domain='gmail.com', password='marz123'),Userusername='fred', local_part='fred', domain='email.com', password='freddy123'])
+#session.add_all([User(username='wendy', local_part='wendy', domain='gmail.com', password='windy'),User(username='mary', local_part='mary', domain='gmail.com', password='marz123'),User(username='fred', local_part='fred', domain='email.com', password='freddy123')])
 #session.commit()
 #for instance in session.query(User).order_by(User.id): print(instance.username,f"{instance.local_part}@{instance.domain}")

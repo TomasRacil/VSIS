@@ -36,7 +36,9 @@
 		//"python.linting.pylintArgs": [
 		//	"--load-plugins",
 		//	"pylint_flask_sqlalchemy",
-		//	"pylint_flask",                 ],
+		//	"pylint_flask",
+		//	"--enable=F,E,W"
+		//],
 		"workbench.colorTheme": "United Ubuntu"
 	},
 
