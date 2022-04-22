@@ -1,0 +1,7 @@
+POST ocalhost:5000/json/1 HTTP/1.4
+content-type: application/json
+
+{
+    "name": "test",
+    "ukol": "otestuj json endpoint"
+}
